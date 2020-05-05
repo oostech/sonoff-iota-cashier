@@ -14,7 +14,9 @@
 
 7. Select the USB port from Sketch -> Port
 
-8. Compile and upload 
+8. Select eeprom_clear from File -> Examples -> EEPROM, compile and upload to set EEPROM to 0. Only neccessary once.
+
+9. Compile and upload sonoff-iota-cashier
 
 
 # 

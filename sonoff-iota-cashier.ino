@@ -48,8 +48,6 @@ void setup() {
 
   connectToWiFi();
 
-  //clearEEPROM();
-
   addrs.push_back(ADDRESS);
 
   unsigned long result = 0;
@@ -118,15 +116,4 @@ void switchOff() {
     digitalWrite(13, HIGH);
     printf("Switched OFF\n");
   }
-}
-
-bool clearEEPROM() {  
-  EEPROM.begin(512);
-  for (int i = 0 ; i < 512 ; i++) {
-    EEPROM.write(i, 0);
-  }
-  EEPROM.commit();
-  EEPROM.end();
-  
-  printf("Cleared EEPROM\n");
 }
